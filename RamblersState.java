@@ -28,8 +28,7 @@ public class RamblersState extends SearchState{
   // getSuccessors
   public ArrayList<SearchState> getSuccessors (Search searcher) {
     RamblersSearch msearcher = (RamblersSearch) searcher;
-    Carta map = msearcher.getMap();
-    ArrayList<MapLink> links = map.getLinks(city);
+    TerrainMap map = Coords()
     ArrayList<SearchState> succs = new ArrayList();
 
     // loop over the links from my city
